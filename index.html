@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS CheatSheet</title>
+</head>
+<body>
+    
+    <!--Nav Section-->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#html-sec">HTML</a></li>
+            <li><a href="#css-sec">CSS</a></li>
+        </ul>
+    </nav>
+
+    <!--Title Section-->
+    <h1>Wayne's HTML/CSS Cheat Sheet</h1>
+
+    <!--HTML Table Section-->
+    <h6 id="html-sec"></h6>
+    <h2>HTML</h2>
+    <div class="table-html">
+        <div class="table-attributes">
+            <h3>Table Tags & Attributes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Table</td>
+                        <td>The wrapper element for all HTML tables.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;thead&gt;</td>
+                        <td>Table Head</td>
+                        <td>The set of rows defining the column headers in a table.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tbody&gt;</td>
+                        <td>Table Body</td>
+                        <td>The set of rows containing actual table data.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>Table Row</td>
+                        <td>The table row container.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt;</td>
+                        <td>Table Data</td>
+                        <td>The table row container.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tfoot&gt;</td>
+                        <td>Table Foot</td>
+                        <td>The set of rows defining the footer in a table.</td>
+                    </tr>
+                    <tr>
+                        <td>colspan</td>
+                        <td>Column Span</td>
+                        <td>Defines how many columns a td element should span.</td>
+                    </tr>
+                    <tr>
+                        <td>rowspan</td>
+                        <td>Row Span</td>
+                        <td>Defines how many rows a td element should span.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="media-others">
+            <h3>Media & Others</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Example / Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Image</td>
+                        <td>&lt;img src="image.png" alt="image description"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td>Video</td>
+                        <td>&lt;video src="test-video.mp4" controls&gt;
+                            Video not supported
+                        &lt;/video&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;audio&gt;</td>
+                        <td>Audio</td>
+                        <td>&lt;audio src="koreanhiphop.mp3" controls&gt;&lt;/audio&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>Span</td>
+                        <td>Used in &lt;p&gt; tags to style text.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--CSS Table Section-->
+    <h6 id="css-sec"></h6>
+    <h2>CSS</h2>
+    <div class="table-css">
+        <div class="selectors">
+            <h3>Selectors</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Name</th>
+                        <th>Example / Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>.example h2</td>
+                        <td>Descendant Selector</td>
+                        <td>Selects the child of a parent element.</td>
+                    </tr>
+                    <tr>
+                        <td>h2.example</td>
+                        <td>Chaining Selector</td>
+                        <td>Selects the element that fits all criteria.</td>
+                    </tr>
+                    <tr>
+                        <td>h1, h2</td>
+                        <td>Group Selector</td>
+                        <td>Selects multiple elements to apply style to.</td>
+                    </tr>
+                    <tr>
+                        <td>#example</td>
+                        <td>ID Selector</td>
+                        <td>Selection for an ID element.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="display-position">
+            <h3>Display & Positioning</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Name</th>
+                        <th>Example / Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{position: relative;}</td>
+                        <td>Relative</td>
+                        <td>Allows an element to be positioned relative to its original place.</td>
+                    </tr>
+                    <tr>
+                        <td>{position: absolute;}</td>
+                        <td>Absolute</td>
+                        <td>Removes element from document flow.</td>
+                    </tr>
+                    <tr>
+                        <td>{postion : fixed;}</td>
+                        <td>Fixed</td>
+                        <td>Locks an element to the page.</td>
+                    </tr>
+                    <tr>
+                        <td>{position: sticky;}</td>
+                        <td>Sticky</td>
+                        <td>Locked into a position until coming into contact with an ancestor block.</td>
+                    </tr>
+                    <tr>
+                        <td>{float: left;}</td>
+                        <td>Float</td>
+                        <td>Determines how far left/right an element goes within its parent element.</td>
+                    </tr>
+                    <tr>
+                        <td>{clear: left;}</td>
+                        <td>Clear</td>
+                        <td>Specifies how an element behaves when bumping into element in the same container.</td>
+                    </tr>
+                    <tr>
+                        <td>{z-index: 1;}</td>
+                        <td>Z-Index</td>
+                        <td>A property that specifies how front or back an element is placed.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p>For more information refer to Codecademy's Cheat Sheet for HTML
+        <a href="https://www.codecademy.com/learn/paths/front-end-engineer-career-path/tracks/fecp-22-fundamentals-of-html/modules/wdcp-22-learn-html-tables/cheatsheet" target="_blank">
+            Tables & Media
+        </a>
+        and CSS
+        <a href="https://www.codecademy.com/learn/paths/front-end-engineer-career-path/tracks/fecp-22-fundamentals-of-css/modules/wdcp-22-learn-css-display-and-positioning/cheatsheet" target="_blank">
+            Selectors, Display & Positioning.
+        </a>
+    </p>
+    
+</body>
+</html>
